@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Demo 1: Image Tracking</title>
+<link rel="stylesheet" href="./styles.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.150.1/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.150.1/examples/jsm/",
+    "mindar-image-three": "https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-three.prod.js"
+  }
+}
+</script>
+</head>
+<body>
+<div id="bar">
+  <a href="./index.html">&larr; Menu</a>
+  <span id="status" data-state="idle">Belum dimulai</span>
+</div>
+<div id="container"></div>
+<div id="info">Belum ada informasi.</div>
+<div id="consent">
+  <div class="card">
+    <h1>Demo 1: Image Tracking</h1>
+    <p>Tampilkan gambar target ini di layar lain atau cetak, lalu arahkan kamera ke gambar tersebut.</p>
+    <img class="target-image" src="./image/WhatsApp%20Image%202026-10-31%20at%2015.04.42.jpeg" alt="Gambar target untuk image tracking">
+    <p>Aplikasi ini meminta izin kamera. Video diproses di perangkat Anda dan tidak diunggah oleh aplikasi ini.</p>
+    <button id="startBtn">Mulai</button>
+  </div>
+</div>
+<script type="module" src="./image-demo.js"></script>
+</body>
+</html>
